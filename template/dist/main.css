@@ -2856,7 +2856,8 @@ html {
   visibility: hidden !important; }
 
 html {
-  font-family: var(--museo-medium); }
+  font-family: var(--museo-medium);
+  color: var(--black-font); }
 
 .main-header {
   font-family: var(--museo-bold);
@@ -2896,10 +2897,15 @@ html {
     .main-header .navigation-link__active {
       color: var(--green-light-font); }
   .main-header .cart {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center; }
+  .main-header .cart-img {
     position: relative; }
-  .main-header .cart-img svg {
-    width: 1.875rem;
-    height: 1.875rem; }
+    .main-header .cart-img svg {
+      width: 1.875rem;
+      height: 1.875rem; }
   .main-header .cart-counter {
     position: absolute;
     top: -5px;
@@ -2909,3 +2915,22 @@ html {
     color: var(--white-grey-font);
     padding: 4px 8px;
     border-radius: 50%; }
+  .main-header .cart-title {
+    padding-left: 15px;
+    text-transform: uppercase;
+    color: var(--black-font);
+    font-size: 0.875rem;
+    font-family: var(--museo-bold); }
+  .main-header .phone {
+    display: flex;
+    align-items: center;
+    padding-left: 2.5rem; }
+  .main-header .phone-img {
+    width: 1.125rem;
+    height: 1.125rem;
+    fill: var(--black-font); }
+  .main-header .phone-title {
+    font-size: 1.125rem;
+    color: var(--black-font);
+    text-decoration: none;
+    margin-left: 6px; }

@@ -53,9 +53,13 @@
   
   .cart {
     position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
   }
   
   .cart-img {
+    position: relative;
     svg {
       width: rem(30);
       height: rem(30);
@@ -72,6 +76,32 @@
     color: var(--white-grey-font);
     padding: 4px 8px;
     border-radius: 50%
+  }
 
+  .cart-title {
+    padding-left: 15px;
+    text-transform: uppercase;
+    color: var(--black-font);
+    font-size: rem(14);
+    font-family: var(--museo-bold);
+  }
+
+  .phone {
+    display: flex;
+    align-items: center;
+    padding-left: rem(40);
+  }
+
+  .phone-img {
+    width: rem(18);
+    height: rem(18);
+    fill: var(--black-font);
+  }
+
+  .phone-title {
+    font-size: rem(18);
+    color: var(--black-font);
+    text-decoration: none;
+    margin-left: 6px;
   }
 }
