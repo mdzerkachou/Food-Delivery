@@ -1,0 +1,18 @@
+- const menu = ['Меню', 'Доставка', 'Акции', 'Условия', 'Контакты'];
+
+header.main-header
+    .container
+        .row
+            a(href='#', class='link')
+                span FST.
+                strong FOOD
+            nav.navigation
+                ul.navigation-wrap
+                    each val, index in menu
+                        li.navigation-item
+                            a(href='#' class='navigation-link')=val
+
+            .cart
+                .cart-img
+                    include ../../img/svg/shopping-cart.svg
+                .cart-counter 1

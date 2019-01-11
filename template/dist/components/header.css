@@ -1,0 +1,51 @@
+.main-header {
+  font-family: var(--museo-bold);
+  padding: rem(20) 0; }
+  .main-header .link {
+    text-decoration: none;
+    font-family: var(--museo-black);
+    display: flex;
+    align-items: center;
+    font-size: rem(24); }
+    .main-header .link span {
+      color: var(--black-font); }
+    .main-header .link strong {
+      color: var(--green-light-font); }
+  .main-header .navigation {
+    display: flex;
+    flex-grow: 1; }
+  .main-header .navigation-wrap {
+    display: flex;
+    align-items: center;
+    margin-left: rem(95); }
+  .main-header .navigation-item {
+    margin-right: rem(22);
+    list-style-type: none; }
+  .main-header .navigation-link {
+    font-family: var(--museo-bold);
+    color: var(--black-font);
+    font-size: rem(14);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .2s linear all;
+    will-change: opacity;
+    display: block;
+    border-bottom: 1px solid transparent; }
+    .main-header .navigation-link:hover {
+      opacity: .8; }
+    .main-header .navigation-link__active {
+      color: var(--green-light-font); }
+  .main-header .cart {
+    position: relative; }
+  .main-header .cart-img svg {
+    width: rem(30);
+    height: rem(30); }
+  .main-header .cart-counter {
+    position: absolute;
+    top: -5px;
+    right: -12px;
+    font-size: rem(13);
+    background-color: var(--red-font);
+    color: var(--white-grey-font);
+    padding: 4px 8px;
+    border-radius: 50%; }
